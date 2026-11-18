@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.navbar{
+    background:linear-gradient(135deg,#0066cc,#00bfff);
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu-btn{
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+#menu{
+    display:none;
+}
+
+.sidebar{
+    width:250px;
+    background:#004080;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:-250px;
+    transition:0.4s;
+}
+
+#menu:checked ~ .sidebar{
+    left:0;
+}
+
+.sidebar a,
+.drop-btn{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    cursor:pointer;
+}
+
+.sidebar a:hover,
+.drop-btn:hover{
+    background:#0066cc;
+}
+
+#course{
+    display:none;
+}
+
+.dropdown{
+    display:none;
+    background:#0055aa;
+}
+
+#course:checked ~ .dropdown{
+    display:block;
+}
+
+.dropdown a{
+    padding-left:40px;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">ITI INSTITUTE</div>
+    <label for="menu" class="menu-btn">☰</label>
+</nav>
+
+<input type="checkbox" id="menu">
+
+<div class="sidebar">
+
+    <a href="#">Home</a>
+
+    <label for="course" class="drop-btn">Courses ▼</label>
+    <input type="checkbox" id="course" hidden>
+
+    <div class="dropdown">
+        <a href="#">COPA</a>
+        <a href="#">Electrician</a>
+        <a href="#">Fitter</a>
+        <a href="#">Plumber</a>
+    </div>
+
+    <a href="#">Gallery</a>
+    <a href="#">Notice</a>
+    <a href="#">Contact</a>
+
+</div>
+
+</body>
+</html>

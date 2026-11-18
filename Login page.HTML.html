@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Login Form</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#6a11cb,#2575fc,#ff416c,#ff4b2b);
+    background-size:400% 400%;
+    animation:bgAnimation 10s ease infinite;
+}
+
+@keyframes bgAnimation{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.login-box{
+    width:380px;
+    padding:40px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    text-align:center;
+    animation:slideIn 1s ease;
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.login-box h2{
+    color:#fff;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.input-box{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:16px;
+    transition:0.4s;
+}
+
+.input-box input::placeholder{
+    color:#eee;
+}
+
+.input-box input:focus{
+    background:rgba(255,255,255,0.3);
+    transform:scale(1.03);
+}
+
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#00f260,#0575e6);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.login-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.links{
+    margin-top:20px;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.links a:hover{
+    color:yellow;
+}
+
+.home{background:#ff009c;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="login-box">
+    <h2>Login</h2>
+
+    <div class="input-box">
+        <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Password">
+        </div>
+   
+    
+
+    <button class="login-btn">Login</button>
+
+
+
+
+    <div class="links">
+ <a href="#">RESET</a>
+        <a href="file:///C:/Users/user/Desktop/Login%202/Personal%20Detalis.html">LOGIN</a>
+      
+
+
+    </div>
+<div class="home">
+<a href="file:///C:/Users/user/Desktop/ITI%20WEBSITE.HTML">HOME</a>
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+

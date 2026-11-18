@@ -1,0 +1,833 @@
+<html>
+<head>
+<title> iti website</title>
+<style>
+body{font-family:arial,sans-serif;
+background:#f4f4f4;}
+.notice-board{
+width:80%;
+margin:30px auto;
+border;2px solid #007bff;
+border-radius:10px;
+background:white;
+overflow:hidden;
+box-shadow:0 0 10px rgb(0,0,0,0.2);
+}
+.notice-title{background:#007bff;
+color:white;
+text-align:center;
+padding:15px;
+font-size:24px;
+font-weight:bold;
+}
+.notice-content{
+padding:15px;
+}
+.notice-content marquee{
+height:200px;
+
+}
+.notice-content ul{
+mardin:0;
+padding-left:20px;
+
+} 
+.notice-content li{
+padding:10px 0;
+border-button:1px solid #ddd;
+}
+.notice-content{background-color:yellow;}
+
+
+
+.iti{height:50px;text-align:center;;
+border-radius:10px;
+background:linear-gradient(190deg,#5B146F,#FF009C);
+color:white;
+font-weight:bold;
+font-size:30;
+}
+
+
+h5{
+width:80%;
+margin:30px auto;
+border;2px solid #007bff;
+border-radius:10px;
+background:white;
+overflow:hidden;
+box-shadow:0 0 10px rgb(0,0,0,0.2);
+}
+
+
+
+
+
+
+h5{background:#C49DFF;
+color:white;
+text-align:center;
+padding:15px;
+font-size:24px;
+font-weight:bold;
+}
+.kh{text-align:right;
+margin-right:40px;
+}
+.footer{
+
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+font-size:25;
+height:10%;
+background:linear-gradient(190deg,blue,red);
+font-weight:bold;
+}
+
+
+
+.course-box{display:grid;
+flex-wrap:wrap;
+text-align:center;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+
+}
+
+.course{background:white;
+width:200px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px green;
+align-content:center;
+color:#004080;
+font-weight:bold;
+}
+
+.a{margin-top:20px;
+margin-left:90px;
+background:linear-gradient(190deg,red,blue);
+width:80%;
+height:40px;
+padding-top:10px;
+padding-left:30px;
+padding-right:20px;
+padding-bottom:10px;
+border-radius:10px;
+box-shadow:0 0 10px #004080;
+text-align:center;
+color:white;
+font-weight:bold;
+font-size:20;
+
+
+}
+
+
+
+
+.facilities{
+display:grid;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+.faciliti{
+background:white;
+width:220px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px red;
+text-align:center;
+color:#004080;
+font-weight:bold
+}
+
+.b{margin-top:20px;
+margin-left:90px;
+background:linear-gradient(190deg,red,blue);
+width:80%;
+height:40px;
+padding-top:10px;
+padding-left:30px;
+padding-right:20px;
+padding-bottom:10px;
+border-radius:10px;
+box-shadow:0 0 10px #004080;
+text-align:center;
+color:white;
+font-weight:bold;
+font-size:20;
+}
+
+.ph{display:flex;
+flex-wrap:wrap;
+text-align:center;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.navbar{
+    background:linear-gradient(135deg,#0066cc,#00bfff);
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+margin-top:20px;
+
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu-btn{
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+#menu{
+    display:none;
+}
+
+.sidebar{
+    width:250px;
+    background:#004080;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:-250px;
+    transition:0.4s;
+}
+
+#menu:checked ~ .sidebar{
+    left:0;
+}
+
+.sidebar a,
+.drop-btn{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    cursor:pointer;
+}
+
+.sidebar a:hover,
+.drop-btn:hover{
+    background:#0066cc;
+}
+
+#course{
+    display:none;
+}
+
+.dropdown{
+    display:none;
+    background:#0055aa;
+}
+
+#course:checked ~ .dropdown{
+    display:block;
+}
+
+.dropdown a{
+    padding-left:40px;
+}
+
+.mks{margin-top:20px;
+margin-bottom:20px;
+
+}
+
+.h2{margin-bottom:30px;}
+
+.h3{background:red;}
+
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px green;
+align-content:center;
+color:white;
+font-weight:bold;
+ background:linear-gradient(135deg,#0066cc,#00bfff);
+
+
+}
+
+
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f0f0f0;
+text-align:right;
+}
+
+.btn-3d{
+    padding:15px 40px;
+    font-size:20px;
+
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(45deg,#ff6a00,#ee0979);
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    
+    box-shadow:
+        0 8px 0 #c2185b,
+        0 12px 20px rgba(0,0,0,0.3);
+
+    transition:all 0.2s ease;
+}
+
+.btn-3d:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 11px 0 #c2185b,
+        0 15px 25px rgba(0,0,0,0.4);
+}
+
+.btn-3d:active{
+    transform:translateY(6px);
+    box-shadow:
+        0 2px 0 #c2185b,
+        0 5px 10px rgba(0,0,0,0.3);
+}
+
+.abc{text-align:right;}
+
+
+
+
+
+.heading{
+    font-size:50px;
+    color:white;
+    height:70px;
+text-align:center;
+    font-weight:bold;
+    font-family:Arial,sans-serif;
+    text-transform:uppercase;
+
+    background:linear-gradient(
+        90deg,
+        #ff0000,
+        #ff9900,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0000ff,
+        #ff00ff,
+        #ff0000
+    );
+
+    background-size:500%;
+    
+
+    animation:rainbow 6s linear infinite;
+}
+
+@keyframes rainbow{
+    0%{background-position:0%;}
+    100%{background-position:500%;}
+transition:1s;
+}
+
+.heading:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+    filter:drop-shadow(0 0 15px cyan);
+text-shadow:0 0 20px white;
+    letter-spacing:1px;
+
+
+}
+
+.bba{margin-bottom:40px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.slider{
+    width:100%;
+    height:30%;
+    overflow:hidden;
+    position:relative;
+margin-top:20px;
+}
+
+.slides{
+    display:flex;
+    width:400%;
+    animation:slide 12s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;}
+
+    100%{margin-left:0;}
+}
+
+.text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:WHITE;
+    font-weight:bold;
+    text-align:center;
+}
+
+.text h1{
+    font-size:50px;
+}
+
+
+
+
+
+
+.map{
+    width:80%;
+    max-width:80%;
+    margin:auto;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+.map iframe{
+    width:100%;
+    height:70%;
+    border:none;
+}
+
+.map{
+    padding:15px 40px;
+    font-size:30px;
+    font-weight:bold;
+
+    margin-top:20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(45deg,#FF0076,#ee0979,#FF2E4C);
+;
+        border:none;
+    border-radius:12px;
+    cursor:pointer;
+    
+    box-shadow:
+        0 8px 0 #c2185b,
+        0 12px 20px rgba(0,0,0,0.3);
+
+    transition:all 0.2s ease;
+}
+
+
+.footer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+    background:#122837;
+    margin-top:30px;
+box-shadow: 0 0 40px cyan;
+
+
+}
+
+
+.box{
+    width:70%;
+    height:30%;
+    background:#333;
+    color:cyan;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+
+    border-width: 4px;
+    border-style: solid;
+    border-color: cyan;
+    
+}
+
+
+
+
+.box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 15px cyan;
+}
+
+.box i{
+    font-size:20px;
+    color:cyan;
+    margin-bottom:10px;
+}
+
+.box h3{
+    margin:5px 0;
+}
+
+.box p{
+    margin:0;
+    font-size:14px;
+}
+
+.cut-square{
+  font-weight:bold;
+  height:10px;
+  width:120%;
+    color:white;
+    margin-top:30px;
+    padding-left:0px;
+  text-align:center;
+  font-size:27;
+  padding:30px;
+  background:linear-gradient(
+  45deg,#E21C34,#ff0000,#00ff00,#18C729,#0000ff,#ff00ff,cyan,red,yellow,blue,pink,green,black,#ff0076,#ff0076);
+  background-size:300% 50%;
+  animation:color 7s infinite;
+
+    border-radius:40px 10px 40px 10px;
+    
+}
+
+@keyframes color{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+
+.map{
+    width:80%;
+    max-width:80%;
+    margin:auto;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+.map iframe{
+    width:100%;
+    height:70%;
+    border:none;
+}
+
+.map{
+    padding:15px 40px;
+    font-size:30px;
+    font-weight:bold;
+
+    margin-top:20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(45deg,#FF0076,#ee0979,#FF2E4C);
+;
+        border:none;
+    border-radius:12px;
+    cursor:pointer;
+    
+    box-shadow:
+        0 8px 0 #c2185b,
+        0 12px 20px rgba(0,0,0,0.3);
+
+    transition:all 0.2s ease;
+}
+
+
+
+
+
+.box{
+    width:70%;
+    height:30%;
+    background:#333;
+    color:cyan;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+
+    border-width: 4px;
+    border-style: solid;
+    border-color: cyan;
+    
+}
+
+
+
+
+.box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 15px cyan;
+}
+
+.box i{
+    font-size:20px;
+    color:cyan;
+    margin-bottom:10px;
+}
+
+.box h3{
+    margin:5px 0;
+}
+
+.box p{
+    margin:0;
+    font-size:14px;
+}
+
+.cut-square{
+  font-weight:bold;
+  height:10px;
+  width:95%;
+    color:white;
+    margin-top:30px;
+    padding-left:0px;
+  text-align:center;
+  font-size:27;
+  padding:30px;
+  background:linear-gradient(
+  45deg,#E21C34,#ff0000,#00ff00,#18C729,#0000ff,#ff00ff,cyan,red,yellow,blue,pink,green,black,#ff0076,#ff0076);
+  background-size:300% 50%;
+  animation:color 7s infinite;
+
+    border-radius:40px 10px 40px 10px;
+    
+}
+
+@keyframes color{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+
+
+
+
+
+
+
+
+h4{background:cyan;
+height:50px;
+font-size:25;
+color:#26658C;
+box-shadow:0 0 10px rgb(0,0,0,0.2);
+}
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="bba">
+<h4 class="heading">GOVT ITI DHARAMJAIGARH</h4>
+</div>
+
+
+
+
+
+<H4><marquee scrollamount="15"><B> ADDRESS:- BEHRAPARA, DHARAMJAIGARH, PIN:-496116</B></marquee></H4>
+
+
+
+<div class="mks">
+<hr style="border:none;height:6px;background:linear-gradient(90deg,
+red,orange,yellow,green,cyan,blue,violet);
+border-radius:5px;"></div>
+
+<div class="abc">
+<a href="file:///C:/Users/user/Desktop/Login%202/Login%20page.html"  button class="btn-3d">LOGIN / REGISTER</button></a></div>
+
+<div class="slider">
+
+<div class="slides">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/WhatsApp%20Image%202026-06-10%20at%202.18.55%20AM.jpeg">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/ITI%20BULIEDING%20IMAGE/WhatsApp%20Image%202026-06-10%20at%207.56.35%20AM.jpeg">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/ITI%20BULIEDING%20IMAGE/WhatsApp%20Image%202026-06-10%20at%207.56.46%20AM%20(1).jpeg">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/ITI%20BULIEDING%20IMAGE/WhatsApp%20Image%202026-06-10%20at%207.56.46%20AM.jpeg">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/ITI%20BULIEDING%20IMAGE/WhatsApp%20Image%202026-06-10%20at%207.56.47%20AM.jpeg">
+
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/ITI%20BULIEDING%20IMAGE/WhatsApp%20Image%202026-06-10%20at%207.56.39%20AM%20(1).jpeg">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/WhatsApp%20Image%202026-06-10%20at%202.18.58%20AM%20(1).jpeg">
+<img src="file:///C:/Users/user/Desktop/ITI%20PHOTO%202/WhatsApp%20Image%202026-06-10%20at%202.18.55%20AM.jpeg">
+
+</div>
+
+
+<div class="text">
+<h1>GOVT. ITI DHARAMJAIGARH</h1>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<nav class="navbar">
+    <div class="logo">ITI INSTITUTE</div>
+    <label for="menu" class="menu-btn">☰</label>
+</nav>
+
+<input type="checkbox" id="menu">
+
+<div class="sidebar">
+
+    <a href="#">Home</a>
+
+    <label for="course" class="drop-btn">Courses ▼</label>
+    <input type="checkbox" id="course" hidden>
+
+    <div class="dropdown">
+        <a href="file:///C:/Users/user/Desktop/all%20trade%20iti/copa.html">COPA</a>
+        <a href="file:///C:/Users/user/Desktop/all%20trade%20iti/electrician.html">Electrician</a>
+        <a href="file:///C:/Users/user/Desktop/all%20trade%20iti/fitter.html">Fitter</a>
+        <a href="file:///C:/Users/user/Desktop/all%20trade%20iti/plumber.html">Plumber</a>
+    </div>
+
+    <a href="#">Gallery</a>
+    <a href="#">Notice</a>
+    <a href="#">Contact</a>
+
+</div>
+
+
+
+<h5>ITI IMPORTANT WEBSITE</h5>
+
+
+<div class="notice-board ">
+<div class="notice-title">
+NOTICE BOARD </DIV>
+<div class="notice-content">
+<marquee direction ="up" scrollamount="5">
+
+<ul>
+<li> Admission open for Session 2026-27</li>
+<li>New COPA Batch Starts from 15 june 2026</li>
+<li> Electrician Trade Practical Exam on 20 june 2026 </li>
+<li> Scholarship from last Date :30 june 2026</li>
+<li> Institude Closed on Sunday </li>
+</ul>
+</marquee>
+</div>
+</div>
+<div class="iti">
+<h3>VIEW ALL TRADE IN ITI DHARAMJAIGARH</h3>
+</div>
+
+<div class="a">
+TRADE / COURSES
+</div>
+<div class="course-box">
+
+<div class="course"><a href="file:///C:/Users/user/Desktop/ITI%20TRADE/COPA.html">COPA</a></div>
+<div class="course"><a href="file:///C:/Users/user/Desktop/ITI%20TRADE/electrician.html">ELECTRICIAN</a></div>
+<div class="course"><a href="file:///C:/Users/user/Desktop/ITI%20TRADE/fitter.html">FITTER</a></div>
+<div class="course"><a href="file:///C:/Users/user/Desktop/ITI%20TRADE/PLUMBER.HTML">PLUMBER</a></div>
+
+</div>
+
+
+<section>
+<h5>FACILITIES</h5>
+<div class="facilities">
+<div class="faciliti">COMPUTER</div>
+<div class="faciliti">LIBRARY</div>
+<div class="faciliti">WORKSHOP</div>
+<div class="faciliti">SMART CLASS</div>
+</div>
+</section>
+
+
+<div class="b">
+GALLREY SESSION
+</div>
+<div class="ph">
+
+<div class="course"><a href="file:///C:/Users/user/Desktop/iti%20photo.html">PHOTO</a></div>
+<div class="course"><a href="file:///C:/Users/user/Desktop/copa%20video.html">VIDEO</a></div>
+</div>
+
+
+
+
+
+
+
+<div class="map">
+LOCATION
+</div>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps?q=govt iti dharamjaigarh raigarh&output=embed"></iframe>
+</div>
+
+
+
+<marquee div class="cut-square">
+  CREATED BY MR.DINESH GUPTA AND MR.BABLU MANDAL AND ROHITA RATHIA FROM GOVT. ITI DHARAMJAIGARH
+  </marquee>
+</body>
+</html>
+
